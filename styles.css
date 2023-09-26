@@ -1,1 +1,107 @@
 
+/* Reset default margin and padding */
+
+
+/* Global styles */
+body {
+    font-family: 'Lato', sans-serif; 
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('./images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.grid-item{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2%;
+}
+
+
+#hero-image{
+    width: 25%;
+    height: 25%;
+    border: 1px solid snow;
+}
+
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+/* Black Box Section */
+.black-box {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 1%;
+}
+
+/* Card Container Section */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2%;
+    padding: 2%;
+    align-items: center;
+    /* Add card styles here */
+}
+
+.card img {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/* Bottom Section */
+.bottom-section {
+    display: flex;
+    
+    /* Add styles for Contact Me and About Me sections */
+}
+
+.contact-me, .about-me {
+    flex: 1;
+    color:#fff;
+    /* Add individual styles for Contact Me and About Me sections */
+}
+.contact-me{
+    background-color: green;
+    margin: 1%;
+    padding:1%;
+    border-radius: 5px;
+}
+#linkedin-link{
+    color: #fff;
+}
+.about-me{
+    background-color: rgb(174, 34, 34);
+    margin: 1%;
+    padding:1%;
+    border-radius: 5px;
+}
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 786px) {
+    .hero {
+        min-height: 50vh;
+    }
+    
+    .bottom-section {
+        flex-direction: column;
+    }
+    /* Add responsive styles here */
+}
