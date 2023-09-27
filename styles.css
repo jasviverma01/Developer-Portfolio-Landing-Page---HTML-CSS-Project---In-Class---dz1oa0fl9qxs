@@ -1,5 +1,5 @@
 
-/* Reset default margin and padding */
+
 
 
 /* Global styles */
@@ -53,14 +53,14 @@ body {
     gap: 2%;
     padding: 2%;
     align-items: center;
-    /* Add card styles here */
+
 }
 
 .card img {
     display: block;
-    margin: 0 auto; /* Center horizontally */
-    max-width: 100%; /* Ensure images don't exceed their container's width */
-    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
 }
 
 
@@ -69,13 +69,13 @@ body {
 .bottom-section {
     display: flex;
     
-    /* Add styles for Contact Me and About Me sections */
+
 }
 
 .contact-me, .about-me {
     flex: 1;
     color:#fff;
-    /* Add individual styles for Contact Me and About Me sections */
+
 }
 .contact-me{
     background-color: green;
@@ -103,5 +103,5 @@ body {
     .bottom-section {
         flex-direction: column;
     }
-    /* Add responsive styles here */
+
 }
